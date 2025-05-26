@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 function App() {
+    const [date, setDate] = useState(new Date().toLocaleDateString())
     return (
         <>
             <div>
@@ -8,6 +11,9 @@ function App() {
                 <h2>
                     Home Page
                 </h2>
+                <p>
+                    Current Date: {date}
+                </p>
             </div>
         </>
     )
